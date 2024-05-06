@@ -6,6 +6,7 @@ import android.os.Debug;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,14 +16,15 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private Button btn_ir;
-    private Datos datos;
+    //private Datos datos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        datos = (Datos)(this.getApplication());
+        String temp = ((Datos)this.getApplication()).getMensaje();
+        //Toast.makeText(getBaseContext(), temp, Toast.LENGTH_LONG).show();
 
         btn_ir = findViewById(R.id.btn_ir);
         btn_ir.setOnClickListener(new View.OnClickListener() {
