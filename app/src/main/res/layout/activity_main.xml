@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOL"
@@ -22,4 +23,13 @@
         android:text="Ir"
         tools:layout_editor_absoluteX="112dp"
         tools:layout_editor_absoluteY="242dp" />
+
+    <Button
+        android:id="@+id/btn_pelis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pelicula"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="383dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,41 +12,38 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
-    private Button btn_ir;
-    private Button btn_pelis;
-    private Datos datos;
+public class Series extends AppCompatActivity {
+    private Button info_merlina;
+    private Button btn_peliculas;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.series);
 
-        String temp = ((Datos)this.getApplication()).getMensaje();
-        //Toast.makeText(getBaseContext(), temp, Toast.LENGTH_LONG).show();
-
-        btn_ir = findViewById(R.id.btn_ir);
-        btn_pelis = findViewById(R.id.btn_pelis);
-        btn_ir.setOnClickListener(new View.OnClickListener() {
+        info_merlina = findViewById(R.id.info_merlina); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
+        info_merlina.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("PRUEBA", "Hola Mundo");
-                Intent siguiente = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(siguiente);
+                Intent ir_info = new Intent(Series.this, InfoSeries.class);
+                startActivity(ir_info);
             }
         });
 
-        btn_pelis.setOnClickListener(new View.OnClickListener() {
+        //btn_peliculas = findViewById(R.id.btn_seriesapeliculas); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
+        btn_peliculas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("PRUEBA", "Hola Mundo");
-                Intent ir_pelis = new Intent(MainActivity.this, peliculas.class);
-                startActivity(ir_pelis);
+                Intent ir_peliculas = new Intent(Series.this, peliculas.class);
+                startActivity(ir_peliculas);
             }
         });
 
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.series), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;

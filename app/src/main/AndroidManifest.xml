@@ -14,8 +14,20 @@
         android:theme="@style/Theme.Peliculas"
         tools:targetApi="31">
         <activity
+            android:name=".peliculas"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
+        <activity
+            android:name=".InfoPeliculas"
+            android:exported="false" />
+        <activity
+            android:name=".InfoSeries"
+            android:exported="false" />
+        <activity
+            android:name=".Series"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

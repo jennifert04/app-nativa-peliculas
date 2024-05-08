@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infoseries"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F19C1B">
@@ -112,7 +113,7 @@
         tools:layout_editor_absoluteX="-1dp">
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/btn_perfil"
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:background="#00FFFFFF"
@@ -123,7 +124,7 @@
             android:layout_height="46dp" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/btn_series"
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:background="#00FFFFFF"
@@ -134,7 +135,7 @@
             android:layout_height="46dp" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btn_peliculas"
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:background="#00FFFFFF"

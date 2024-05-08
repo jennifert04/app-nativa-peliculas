@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/series"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F19C1B">
@@ -27,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TableLayout
-            android:layout_width="300dp"
+            android:layout_width="320dp"
             android:layout_height="200dp">
 
             <TableRow
@@ -36,33 +37,42 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="152dp"
+                    android:layout_width="150dp"
                     android:layout_height="149dp"
                     app:srcCompat="@drawable/merlina" />
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:srcCompat="@drawable/crown" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp" />
 
             </TableRow>
 
             <TableRow
-                android:layout_width="wrap_content"
+                android:layout_width="105dp"
                 android:layout_height="wrap_content">
 
                 <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/info_merlina"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="+ info" />
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/info_crown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+ info" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" />
+
             </TableRow>
 
             <TableRow
@@ -71,15 +81,19 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="152dp"
-                    android:layout_height="149dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:srcCompat="@drawable/dark" />
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:srcCompat="@drawable/crown" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp" />
             </TableRow>
 
             <TableRow
@@ -87,16 +101,20 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/info_bohemian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+ info" />
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/info_aladin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+ info" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" />
             </TableRow>
 
             <TableRow
@@ -105,15 +123,19 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="152dp"
+                    android:layout_width="150dp"
                     android:layout_height="149dp"
                     app:srcCompat="@drawable/rain" />
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
                     app:srcCompat="@drawable/wolverine" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp" />
             </TableRow>
 
             <TableRow
@@ -121,13 +143,13 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/info_bohemian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+ info" />
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/info_aladin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+ info" />
@@ -145,7 +167,7 @@
         tools:layout_editor_absoluteX="-1dp">
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/btn_perfil"
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:background="#00FFFFFF"
@@ -156,7 +178,7 @@
             android:layout_height="46dp" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/btn_series"
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:background="#00FFFFFF"
@@ -167,7 +189,7 @@
             android:layout_height="46dp" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btn_seriesapeliculas"
             android:layout_width="62dp"
             android:layout_height="match_parent"
             android:background="#00FFFFFF"
