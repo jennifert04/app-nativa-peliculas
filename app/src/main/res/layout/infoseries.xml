@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F19C1B">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="143dp"
+        android:layout_height="196dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/avatar"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:srcCompat="@drawable/calendario"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 de abril de 2024"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="212dp" />
+
+    <FrameLayout
+        android:layout_width="424dp"
+        android:layout_height="444dp"
+        android:background="#000000"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="287dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="DONDE VERLO"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#FF0000"
+            android:textColorLink="#FF0000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="10dp"
+            android:translationY="5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HBO, Amazon Prime"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:translationX="10dp"
+            android:translationY="35dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Información sobre la serie"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FF0000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationX="10dp"
+            android:translationY="65dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="398dp"
+            android:layout_height="238dp"
+            android:text="Ambientada en el competitivo mundo del tenis profesional, en el que la jugadora convertida en entrenadora Tashi (Zendaya) ha transformado a su marido Art (Faist) en un campeón de Grand Slam. Tras una racha de derrotas, Tashi lo inscribe en un evento &quot;Challenger&quot; -el nivel más bajo de los torneos profesionales- donde debe enfrentarse a Patrick (O'Connor), el antiguo novio de Tashi y su antiguo mejor amigo"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FF0000"
+            android:textSize="16sp"
+            android:translationX="10dp"
+            android:translationY="100dp"
+            android:visibility="visible" />
+
+    </FrameLayout>
+
+    <TableRow
+        android:layout_width="412dp"
+        android:layout_height="75dp"
+        android:background="#267365"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/perfil" />
+
+        <Space
+            android:layout_width="110dp"
+            android:layout_height="46dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/series" />
+
+        <Space
+            android:layout_width="110dp"
+            android:layout_height="46dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/peliculas" />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

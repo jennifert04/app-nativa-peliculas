@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icono" />
+        app:srcCompat="@drawable/icono2" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -38,13 +38,13 @@
                     android:id="@+id/imageView4"
                     android:layout_width="152dp"
                     android:layout_height="149dp"
-                    app:srcCompat="@drawable/bohemian" />
+                    app:srcCompat="@drawable/merlina" />
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/aladin" />
+                    app:srcCompat="@drawable/crown" />
 
             </TableRow>
 
@@ -73,13 +73,13 @@
                     android:id="@+id/imageView4"
                     android:layout_width="152dp"
                     android:layout_height="149dp"
-                    app:srcCompat="@drawable/avatar" />
+                    app:srcCompat="@drawable/dark" />
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/fastx" />
+                    app:srcCompat="@drawable/crown" />
             </TableRow>
 
             <TableRow
@@ -107,7 +107,7 @@
                     android:id="@+id/imageView4"
                     android:layout_width="152dp"
                     android:layout_height="149dp"
-                    app:srcCompat="@drawable/endgame" />
+                    app:srcCompat="@drawable/rain" />
 
                 <ImageView
                     android:id="@+id/imageView3"
