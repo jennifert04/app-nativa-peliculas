@@ -5,6 +5,12 @@
       <entry key="App">
         <State />
       </entry>
+      <entry key="FilmSpot">
+        <State />
+      </entry>
+      <entry key="peliculas">
+        <State />
+      </entry>
     </value>
   </component>
 </project>

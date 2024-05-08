@@ -13,48 +13,49 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class peliculas extends AppCompatActivity {
-    private Button info_bohemian;
-    private Button info_avatar;
-    private Button info_aladin;
-    private Button info_fastx;
-    private Button info_endgame;
-    private Button info_wolverine;
+public class home extends AppCompatActivity {
+    private ImageButton btn_perfil;
+    private ImageButton btn_peliculas;
     private ImageButton btn_series;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.peliculas);
+        setContentView(R.layout.home);
 
-        info_bohemian = findViewById(R.id.info_bohemian); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
-        info_bohemian.setOnClickListener(new View.OnClickListener() {
+        btn_perfil = findViewById(R.id.btn_perfil);
+        btn_peliculas = findViewById(R.id.btn_peliculas);
+        btn_series = findViewById(R.id.btn_series);
+        btn_perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("PRUEBA", "Hola Mundo");
-                Intent ir_info = new Intent(peliculas.this, InfoPeliculas.class);
-                startActivity(ir_info);
+                Intent perfil = new Intent(home.this, peliculas.class);
+                startActivity(perfil);
             }
         });
 
-        btn_series = findViewById(R.id.btn_series); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
+        btn_peliculas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent peliculas = new Intent(home.this, peliculas.class);
+                startActivity(peliculas);
+            }
+        });
+
         btn_series.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.d("PRUEBA", "Hola Mundo");
-                Intent ir_info = new Intent(peliculas.this, InfoPeliculas.class);
-                startActivity(ir_info);
+                Intent series = new Intent(home.this, Series.class);
+                startActivity(series);
             }
         });
 
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.peliculas), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
     }
-
-
 }

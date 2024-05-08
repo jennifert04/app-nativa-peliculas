@@ -5,7 +5,8 @@
     android:id="@+id/infoseries"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F19C1B">
+    android:background="#F19C1B"
+    tools:context=".InfoSeries">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -14,7 +15,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/avatar"
+        app:srcCompat="@drawable/lol"
         tools:layout_editor_absoluteY="47dp" />
 
     <ImageView

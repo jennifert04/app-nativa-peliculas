@@ -29,6 +29,9 @@
             android:name=".Series"
             android:exported="true" />
         <activity
+            android:name=".home"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -5,7 +5,8 @@
     android:id="@+id/series"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F19C1B">
+    android:background="#F19C1B"
+    tools:context=".Series">
 
     <ImageView
         android:id="@+id/imageView7"
