@@ -62,12 +62,14 @@
                     android:id="@+id/info_merlina"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#267365"
                     android:text="+ info" />
 
                 <Button
                     android:id="@+id/info_crown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#267365"
                     android:text="+ info" />
 
                 <Space
@@ -90,7 +92,7 @@
                     android:id="@+id/imageView3"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    app:srcCompat="@drawable/crown" />
+                    app:srcCompat="@drawable/vision" />
 
                 <Space
                     android:layout_width="wrap_content"
@@ -105,12 +107,14 @@
                     android:id="@+id/info_bohemian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#267365"
                     android:text="+ info" />
 
                 <Button
                     android:id="@+id/info_aladin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#267365"
                     android:text="+ info" />
 
                 <Space
@@ -147,12 +151,14 @@
                     android:id="@+id/info_bohemian"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#267365"
                     android:text="+ info" />
 
                 <Button
                     android:id="@+id/info_aladin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#267365"
                     android:text="+ info" />
 
             </TableRow>

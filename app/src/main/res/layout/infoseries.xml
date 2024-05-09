@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/lol"
+        app:srcCompat="@drawable/avatar"
         tools:layout_editor_absoluteY="47dp" />
 
     <ImageView

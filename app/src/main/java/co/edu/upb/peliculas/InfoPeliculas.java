@@ -6,14 +6,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+
 import androidx.activity.EdgeToEdge;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class InfoPeliculas extends AppCompatActivity {
-    private Button btn_ir;
-    private Button btn_pelis;
+    private ImageButton btn_ir;
+    private ImageButton btn_pelis;
     private Datos datos;
 
     @Override
@@ -25,25 +27,25 @@ public class InfoPeliculas extends AppCompatActivity {
         String temp = ((Datos)this.getApplication()).getMensaje();
         //Toast.makeText(getBaseContext(), temp, Toast.LENGTH_LONG).show();
 
-        //btn_ir = findViewById(R.id.btn_ir);
-        //btn_pelis = findViewById(R.id.btn_pelis);
+        btn_ir = findViewById(R.id.btn_series);
+        btn_pelis = findViewById(R.id.btn_peliculas);
         btn_ir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("PRUEBA", "Hola Mundo");
-                Intent siguiente = new Intent(InfoPeliculas.this, MainActivity2.class);
+                Intent siguiente = new Intent(InfoPeliculas.this, Series.class);
                 startActivity(siguiente);
             }
         });
-        /*
+
         btn_pelis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("PRUEBA", "Hola Mundo");
-                Intent ir_pelis = new Intent(MainActivity.this, peliculas.class);
+                Intent ir_pelis = new Intent(InfoPeliculas.this, peliculas.class);
                 startActivity(ir_pelis);
             }
-        });*/
+        });
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.infopeliculas), (v, insets) -> {
