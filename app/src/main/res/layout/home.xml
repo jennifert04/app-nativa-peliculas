@@ -248,38 +248,43 @@
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="410dp"
-                    android:layout_height="40dp"
+                    android:layout_width="408dp"
+                    android:layout_height="22dp"
                     android:text="Powered By: "
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="normal"
                     app:layout_constraintBottom_toTopOf="@+id/tableRow3"
-                    tools:layout_editor_absoluteX="2dp" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="410dp"
-                    android:layout_height="40dp"
+                    android:layout_width="402dp"
+                    android:layout_height="27dp"
                     android:text="JSS Films"
                     android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="22sp"
+                    android:textColor="#F4511E"
+                    android:textSize="20sp"
                     android:textStyle="bold|italic"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintBottom_toTopOf="@+id/tableRow3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView9"
-                    tools:layout_editor_absoluteX="2dp" />
+                    app:layout_constraintVertical_bias="0.989" />
 
                 <TableRow
                     android:id="@+id/tableRow3"
-                    android:layout_width="409dp"
-                    android:layout_height="61dp"
+                    android:layout_width="450dp"
+                    android:layout_height="70dp"
                     android:background="#267365"
-                    android:gravity="bottom|end"
                     android:orientation="vertical"
-                    tools:layout_editor_absoluteX="2dp"
-                    tools:layout_editor_absoluteY="48dp">
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="46dp">
 
                     <ImageButton
                         android:id="@+id/btn_perfil"
