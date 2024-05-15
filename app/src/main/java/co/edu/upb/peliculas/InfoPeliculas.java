@@ -14,8 +14,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class InfoPeliculas extends AppCompatActivity {
-    private ImageButton btn_ir;
-    private ImageButton btn_pelis;
+    private ImageButton btn_series;
+    private ImageButton btn_peliculas;
+    private ImageButton btn_perfil;
     private Datos datos;
 
     @Override
@@ -27,9 +28,8 @@ public class InfoPeliculas extends AppCompatActivity {
         String temp = ((Datos)this.getApplication()).getMensaje();
         //Toast.makeText(getBaseContext(), temp, Toast.LENGTH_LONG).show();
 
-        btn_ir = findViewById(R.id.btn_series);
-        btn_pelis = findViewById(R.id.btn_peliculas);
-        btn_ir.setOnClickListener(new View.OnClickListener() {
+        btn_series = findViewById(R.id.btn_series);
+        btn_series.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("PRUEBA", "Hola Mundo");
@@ -38,11 +38,22 @@ public class InfoPeliculas extends AppCompatActivity {
             }
         });
 
-        btn_pelis.setOnClickListener(new View.OnClickListener() {
+        btn_peliculas = findViewById(R.id.btn_peliculas);
+        btn_peliculas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("PRUEBA", "Hola Mundo");
-                Intent ir_pelis = new Intent(InfoPeliculas.this, peliculas.class);
+                Intent siguiente = new Intent(InfoPeliculas.this, peliculas.class);
+                startActivity(siguiente);
+            }
+        });
+
+        btn_perfil = findViewById(R.id.btn_perfil);
+        btn_perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("PRUEBA", "Hola Mundo");
+                Intent ir_pelis = new Intent(InfoPeliculas.this, home.class);
                 startActivity(ir_pelis);
             }
         });
@@ -54,7 +65,4 @@ public class InfoPeliculas extends AppCompatActivity {
             return insets;
         });
     }
-
-
-
 }

@@ -14,13 +14,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class peliculas extends AppCompatActivity {
-    private Button info_bohemian;
-    private Button info_avatar;
-    private Button info_aladin;
-    private Button info_fastx;
-    private Button info_endgame;
-    private Button info_wolverine;
     private ImageButton btn_series;
+    private ImageButton btn_peliculas;
+    private ImageButton btn_perfil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +24,30 @@ public class peliculas extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.peliculas);
 
-        info_bohemian = findViewById(R.id.info_bohemian); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("PRUEBA", "Hola Mundo");
+                Intent ir_info = new Intent(peliculas.this, InfoPeliculas.class);
+                startActivity(ir_info);
+            }
+        };
+
+        Button info_merlina = findViewById(R.id.info_bohemian);
+        Button otro_boton = findViewById(R.id.info_aladin);
+        Button tercer_boton = findViewById(R.id.info_avatar);
+        Button cuarto_boton = findViewById(R.id.info_fastx);
+        Button quinto_boton = findViewById(R.id.info_endgame);
+        Button sexto_boton = findViewById(R.id.info_wolcerine);
+
+        info_merlina.setOnClickListener(listener);
+        otro_boton.setOnClickListener(listener);
+        tercer_boton.setOnClickListener(listener);
+        cuarto_boton.setOnClickListener(listener);
+        quinto_boton.setOnClickListener(listener);
+        sexto_boton.setOnClickListener(listener);
+
+        /*info_bohemian = findViewById(R.id.info_bohemian); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
         info_bohemian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,14 +55,34 @@ public class peliculas extends AppCompatActivity {
                 Intent ir_info = new Intent(peliculas.this, InfoPeliculas.class);
                 startActivity(ir_info);
             }
-        });
+        });*/
 
         btn_series = findViewById(R.id.btn_series); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
         btn_series.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("PRUEBA", "Hola Mundo");
-                Intent ir_info = new Intent(peliculas.this, InfoPeliculas.class);
+                Intent ir_info = new Intent(peliculas.this, Series.class);
+                startActivity(ir_info);
+            }
+        });
+
+        btn_perfil = findViewById(R.id.btn_perfil); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
+        btn_perfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("PRUEBA", "Hola Mundo");
+                Intent ir_info = new Intent(peliculas.this, home.class);
+                startActivity(ir_info);
+            }
+        });
+
+        btn_peliculas = findViewById(R.id.btn_peliculas); //poner el nombre de la vista, P.ej (btn_home_volver/btn_home_ir)
+        btn_peliculas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("PRUEBA", "Hola Mundo");
+                Intent ir_info = new Intent(peliculas.this, home.class);
                 startActivity(ir_info);
             }
         });
