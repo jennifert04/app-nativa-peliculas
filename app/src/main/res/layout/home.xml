@@ -92,166 +92,199 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ScrollView
+                        android:id="@+id/scrollView2"
+                        android:layout_width="360dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TableLayout
+                            android:layout_width="350dp"
+                            android:layout_height="200dp">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="164dp"
+                                    android:layout_height="160dp"
+                                    app:srcCompat="@drawable/oppenheimer" />
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/poorthings" />
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bohemian Rhapsody"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                                    tools:layout_editor_absoluteX="132dp" />
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Poor Things"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                                    tools:layout_editor_absoluteX="132dp" />
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp" />
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/imageView4"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/enga_o" />
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:srcCompat="@drawable/alquimia" />
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="160dp" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Engaños"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                                    tools:layout_editor_absoluteX="132dp" />
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Alquimia de almas"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                                    tools:layout_editor_absoluteX="132dp" />
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp" />
+                            </TableRow>
+
+                        </TableLayout>
+                    </ScrollView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="109dp">
 
-                <ScrollView
-                    android:id="@+id/scrollView2"
-                    android:layout_width="360dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.493"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="410dp"
+                    android:layout_height="40dp"
+                    android:text="Powered By: "
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toTopOf="@+id/tableRow3"
+                    tools:layout_editor_absoluteX="2dp" />
 
-                    <TableLayout
-                        android:layout_width="350dp"
-                        android:layout_height="200dp">
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imageView4"
-                                android:layout_width="164dp"
-                                android:layout_height="160dp"
-                                app:srcCompat="@drawable/oppenheimer" />
-
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="150dp"
-                                android:layout_height="150dp"
-                                app:srcCompat="@drawable/poorthings" />
-
-                            <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="160dp" />
-
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center">
-
-                            <TextView
-                                android:id="@+id/textView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Bohemian Rhapsody"
-                                android:textAlignment="center"
-                                android:textColor="@color/black"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                                app:layout_constraintTop_toTopOf="@+id/imageView5"
-                                tools:layout_editor_absoluteX="132dp" />
-
-                            <TextView
-                                android:id="@+id/textView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Poor Things"
-                                android:textAlignment="center"
-                                android:textColor="@color/black"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                                app:layout_constraintTop_toTopOf="@+id/imageView5"
-                                tools:layout_editor_absoluteX="132dp" />
-
-                            <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="60dp" />
-
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/imageView4"
-                                android:layout_width="150dp"
-                                android:layout_height="150dp"
-                                app:srcCompat="@drawable/enga_o" />
-
-                            <ImageView
-                                android:id="@+id/imageView3"
-                                android:layout_width="150dp"
-                                android:layout_height="150dp"
-                                app:srcCompat="@drawable/alquimia" />
-
-                            <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="160dp" />
-                        </TableRow>
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:gravity="center">
-
-                            <TextView
-                                android:id="@+id/textView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Engaños"
-                                android:textAlignment="center"
-                                android:textColor="@color/black"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                                app:layout_constraintTop_toTopOf="@+id/imageView5"
-                                tools:layout_editor_absoluteX="132dp" />
-
-                            <TextView
-                                android:id="@+id/textView8"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Alquimia de almas"
-                                android:textAlignment="center"
-                                android:textColor="@color/black"
-                                android:textSize="15sp"
-                                android:textStyle="bold"
-                                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                                app:layout_constraintTop_toTopOf="@+id/imageView5"
-                                tools:layout_editor_absoluteX="132dp" />
-
-                            <Space
-                                android:layout_width="wrap_content"
-                                android:layout_height="60dp" />
-                        </TableRow>
-
-                    </TableLayout>
-                </ScrollView>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="410dp"
+                    android:layout_height="40dp"
+                    android:text="JSS Films"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    tools:layout_editor_absoluteX="2dp" />
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:id="@+id/tableRow3"
+                    android:layout_width="409dp"
+                    android:layout_height="61dp"
                     android:background="#267365"
                     android:gravity="bottom|end"
                     android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:layout_editor_absoluteX="-1dp">
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="48dp">
 
                     <ImageButton
                         android:id="@+id/btn_perfil"
-                        android:layout_width="62dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="64dp"
+                        android:layout_height="56dp"
                         android:background="#00FFFFFF"
                         app:srcCompat="@drawable/perfil" />
 
@@ -277,6 +310,7 @@
                         android:background="#00FFFFFF"
                         app:srcCompat="@drawable/peliculas" />
                 </TableRow>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>

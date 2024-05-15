@@ -27,6 +27,7 @@ public class home extends AppCompatActivity {
         btn_perfil = findViewById(R.id.btn_perfil);
         btn_peliculas = findViewById(R.id.btn_peliculas);
         btn_series = findViewById(R.id.btn_series);
+        //btn_creditos = findViewById(R.id.btn_creditos);
         btn_perfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
