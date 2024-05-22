@@ -4,98 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".home">
 
-    <ScrollView
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/linearLayout5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="#FFB300">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="89dp"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lol" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="66dp"
+                    android:layout_height="69dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="28dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/film" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:text="¡Hola Cinéfilo!"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                    app:layout_constraintVertical_bias="0.614" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="#FFB300"
-                android:orientation="vertical">
+                android:text="Encuentra tus películas y series favoritas:)"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFB300"
+                android:text="¡Aqui!"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
 
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="89dp"
-                        android:layout_height="91dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="36dp"
-                        app:layout_constraintEnd_toStartOf="@+id/textView8"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/lol" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/imageView8"
-                        android:layout_width="66dp"
-                        android:layout_height="69dp"
-                        android:layout_marginTop="36dp"
-                        android:layout_marginEnd="28dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/film" />
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="24dp"
-                        android:text="¡Hola Cinéfilo!"
-                        android:textColor="@color/white"
-                        android:textSize="25sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                        app:layout_constraintEnd_toStartOf="@+id/imageView8"
-                        app:layout_constraintTop_toTopOf="@+id/imageView5"
-                        app:layout_constraintVertical_bias="0.614" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Encuentra tus películas y series favoritas:)"
-                    android:textAlignment="center"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="¡Aqui!"
-                    android:textAlignment="center"
-                    android:textColor="#FFFFFF"
-                    android:textSize="22sp"
-                    android:textStyle="bold|italic" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:background="#FFFFFF"
+                android:orientation="vertical">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -104,34 +113,35 @@
                     <ScrollView
                         android:id="@+id/scrollView2"
                         android:layout_width="360dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
+                        android:layout_height="580dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintHorizontal_bias="0.52"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
                         <TableLayout
-                            android:layout_width="350dp"
-                            android:layout_height="200dp">
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">>
 
                             <TableRow
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="325dp"
+                                android:layout_height="174dp"
                                 android:gravity="center">
 
                                 <ImageView
                                     android:id="@+id/imageView4"
-                                    android:layout_width="164dp"
-                                    android:layout_height="160dp"
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
                                     app:srcCompat="@drawable/oppenheimer" />
 
                                 <ImageView
                                     android:id="@+id/imageView3"
-                                    android:layout_width="150dp"
-                                    android:layout_height="150dp"
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
                                     app:srcCompat="@drawable/poorthings" />
 
                                 <Space
@@ -184,14 +194,14 @@
 
                                 <ImageView
                                     android:id="@+id/imageView4"
-                                    android:layout_width="150dp"
-                                    android:layout_height="150dp"
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
                                     app:srcCompat="@drawable/enga_o" />
 
                                 <ImageView
                                     android:id="@+id/imageView3"
-                                    android:layout_width="150dp"
-                                    android:layout_height="150dp"
+                                    android:layout_width="200dp"
+                                    android:layout_height="200dp"
                                     app:srcCompat="@drawable/alquimia" />
 
                                 <Space
@@ -242,82 +252,79 @@
 
             </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="109dp">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="408dp"
-                    android:layout_height="22dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
                     android:text="Powered By: "
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="15sp"
-                    android:textStyle="normal"
-                    app:layout_constraintBottom_toTopOf="@+id/tableRow3"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
+                    android:textStyle="normal" />
 
                 <TextView
                     android:id="@+id/textView9"
-                    android:layout_width="402dp"
-                    android:layout_height="27dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
                     android:text="JSS Films"
                     android:textAlignment="center"
                     android:textColor="#F4511E"
                     android:textSize="20sp"
-                    android:textStyle="bold|italic"
-                    app:layout_constraintBottom_toTopOf="@+id/tableRow3"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView9"
-                    app:layout_constraintVertical_bias="0.989" />
+                    android:textStyle="bold|italic" />
 
-                <TableRow
-                    android:id="@+id/tableRow3"
-                    android:layout_width="450dp"
-                    android:layout_height="70dp"
-                    android:background="#267365"
-                    android:orientation="vertical"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="46dp">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:background="#267365">
 
                     <ImageButton
                         android:id="@+id/btn_perfil"
                         android:layout_width="64dp"
                         android:layout_height="56dp"
                         android:background="#00FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_series"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/perfil" />
-
-                    <Space
-                        android:layout_width="110dp"
-                        android:layout_height="46dp" />
 
                     <ImageButton
                         android:id="@+id/btn_series"
-                        android:layout_width="62dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="61dp"
+                        android:layout_height="81dp"
                         android:background="#00FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/series" />
-
-                    <Space
-                        android:layout_width="110dp"
-                        android:layout_height="46dp" />
 
                     <ImageButton
                         android:id="@+id/btn_peliculas"
                         android:layout_width="62dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="76dp"
                         android:background="#00FFFFFF"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btn_series"
+                        app:layout_constraintTop_toTopOf="parent"
                         app:srcCompat="@drawable/peliculas" />
-                </TableRow>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
