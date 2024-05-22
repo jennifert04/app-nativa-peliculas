@@ -10,13 +10,14 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="143dp"
-        android:layout_height="196dp"
+        android:layout_width="190dp"
+        android:layout_height="248dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41"
         app:srcCompat="@drawable/avatar" />
 
     <ImageView
@@ -25,24 +26,41 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557"
         app:srcCompat="@drawable/calendario" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="24 de abril de 2024"
+        android:text="16 de diciembre de 2022"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AVATAR"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -78,7 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="HBO, Amazon Prime"
-            android:textColor="#FFFFFF"
+            android:textColor="#FF0000"
             android:textSize="16sp"
             android:translationX="10dp"
             android:translationY="35dp" />
@@ -87,7 +105,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Información sobre la película"
+            android:text="Información sobre Avatar"
             android:textColor="#FFFFFF"
             android:textColorLink="#FF0000"
             android:textSize="18sp"
@@ -100,7 +118,7 @@
             android:id="@+id/textView2"
             android:layout_width="398dp"
             android:layout_height="238dp"
-            android:text="Ambientada en el competitivo mundo del tenis profesional, en el que la jugadora convertida en entrenadora Tashi (Zendaya) ha transformado a su marido Art (Faist) en un campeón de Grand Slam. Tras una racha de derrotas, Tashi lo inscribe en un evento &quot;Challenger&quot; -el nivel más bajo de los torneos profesionales- donde debe enfrentarse a Patrick (O'Connor), el antiguo novio de Tashi y su antiguo mejor amigo"
+            android:text="Jake Sully y Ney'tiri han formado una familia y hacen todo lo posible por permanecer juntos. Sin embargo, deben abandonar su hogar y explorar las regiones de Pandora cuando una antigua amenaza reaparece. Más de una década después de los acontecimientos de 'Avatar', los Na'vi Jake Sully, Neytiri y sus hijos viven en paz en los bosques de Pandora hasta que regresan los hombres del cielo. Entonces comienzan los problemas que persiguen sin descanso a la familia Sully, que decide hacer un gran sacrificio para mantener a su pueblo a salvo y seguir ellos con vida. "
             android:textColor="#FFFFFF"
             android:textColorLink="#FF0000"
             android:textSize="16sp"

@@ -10,14 +10,14 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="143dp"
-        android:layout_height="196dp"
+        android:layout_width="187dp"
+        android:layout_height="242dp"
         app:layout_constraintBottom_toTopOf="@+id/frameLayout"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/avatar" />
+        app:srcCompat="@drawable/dark" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -28,13 +28,14 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575"
         app:srcCompat="@drawable/calendario" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="24 de abril de 2024"
+        android:text="1 de diciembre del 2017"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -43,6 +44,21 @@
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DARK"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -77,8 +93,8 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="HBO, Amazon Prime"
-            android:textColor="#FFFFFF"
+            android:text="Netflix"
+            android:textColor="#D80000"
             android:textSize="16sp"
             android:translationX="10dp"
             android:translationY="35dp" />
@@ -87,7 +103,7 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="Información sobre la serie"
+            android:text="Información sobre Dark"
             android:textColor="#FFFFFF"
             android:textColorLink="#FF0000"
             android:textSize="18sp"
@@ -99,8 +115,8 @@
         <TextView
             android:id="@+id/textView2"
             android:layout_width="398dp"
-            android:layout_height="191dp"
-            android:text="Ambientada en el competitivo mundo del tenis profesional, en el que la jugadora convertida en entrenadora Tashi (Zendaya) ha transformado a su marido Art (Faist) en un campeón de Grand Slam. Tras una racha de derrotas, Tashi lo inscribe en un evento &quot;Challenger&quot; -el nivel más bajo de los torneos profesionales- donde debe enfrentarse a Patrick (O'Connor), el antiguo novio de Tashi y su antiguo mejor amigo"
+            android:layout_height="197dp"
+            android:text="En la ciudad de Winden comienzan a desaparecer niños,15​ sacando a la luz las relaciones fracturadas, vidas dobles y el pasado oscuro de cuatro familias (Kahnwald, Nielsen, Tiedemann y Doppler) que viven allí, y revelando un misterio que abarca cuatro generaciones.  La historia comienza en 2019, pero se extiende a través del viaje en el tiempo para incluir argumentos en 1986 y 1953, a medida que ciertos personajes de las familias principales de la serie se dan cuenta de la existencia de un agujero de gusano."
             android:textColor="#FFFFFF"
             android:textColorLink="#FF0000"
             android:textSize="16sp"
@@ -112,7 +128,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5 Temporadas"
+            android:text="3 Temporadas"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -123,7 +139,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="62 Episodios"
+            android:text="26 Episodios"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
